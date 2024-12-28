@@ -8,6 +8,7 @@ import androidx.compose.ui.res.stringResource
 import id.febimaharani.bukuku.AppDestinations
 import id.febimaharani.bukuku.R
 
+// TODO : Mengaktifkan API 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyTopAppBar(
@@ -18,6 +19,7 @@ fun MyTopAppBar(
     TopAppBar(
         title = { Text(text = currentScreen.title) },
         navigationIcon = {
+            // jika canNavigateBack bernilai 'true', akan menampilkan navigasi balik saat tombol ditekan
             if (canNavigateBack){
                 IconButton(
                     onClick = onNavigateUpClicked
