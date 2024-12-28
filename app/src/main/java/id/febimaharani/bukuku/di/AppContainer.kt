@@ -3,9 +3,7 @@ package id.febimaharani.bukuku.di
 import id.febimaharani.bukuku.data.BukuKuRepository
 import id.febimaharani.bukuku.network.BukuKuApiService
 
-/**
- * Dependency Injection container at the application level.
- */
+// kontainer Dependency Injection aplikasi
 interface AppContainer {
     val bukuKuApiService: BukuKuApiService
     val bukukuRepository: BukuKuRepository
