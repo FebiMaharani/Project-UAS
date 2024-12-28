@@ -7,6 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
 
+// TODO kelas ini berisi implementasi Dependency Injection(DI) kontainer aplikasi
 class DefaultAppContainer : AppContainer {
 
     override val bukuKuApiService: BukuKuApiService by lazy {
