@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import id.febimaharani.bukuku.ui.theme.BukuKuTheme
 
+// menampilkan loading dengan indikator progres
 @Composable
 fun LoadingScreen(modifier: Modifier = Modifier) {
     Box(
