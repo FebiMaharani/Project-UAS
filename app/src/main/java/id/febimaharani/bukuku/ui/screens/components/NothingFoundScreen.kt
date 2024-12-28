@@ -17,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import id.febimaharani.bukuku.ui.theme.BukuKuTheme
 import id.febimaharani.bukuku.R
 
+// menampilkan tidak ada buku favorite
 @Composable
 fun NothingFoundScreen(
     modifier: Modifier = Modifier
@@ -39,6 +40,7 @@ fun NothingFoundScreen(
     }
 }
 
+// menampilkan "tidak ada buku favorite"
 @Preview(showSystemUi = true)
 @Composable
 fun NothingFoundScreenPreview() {
