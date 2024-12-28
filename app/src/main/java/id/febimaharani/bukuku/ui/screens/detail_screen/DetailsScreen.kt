@@ -23,14 +23,17 @@ import id.febimaharani.bukuku.model.Book
 import id.febimaharani.bukuku.ui.screens.components.ErrorScreen
 import id.febimaharani.bukuku.ui.screens.components.LoadingScreen
 
+// Menampilkan detail buku
 @Composable
 fun DetailScreen(
     modifier: Modifier = Modifier,
     viewModel: DetailsViewModel,
     retryAction: () -> Unit,
 ) {
+    // mengambil nilai state UI dari ViewModel
     val uiStateDet = viewModel.uiStateDetail.collectAsState().value
 
+    // menangani status (loading, error, success)
     when (uiStateDet) {
 
         is DetailsUiState.Loading -> {
@@ -48,6 +51,7 @@ fun DetailScreen(
 
 }
 
+// menampilkan detail buku dalam bentuk card
 @Composable
 fun BookDetails(book: Book) {
     Card(
