@@ -13,11 +13,12 @@ import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException
 
+// kelas detail View Model untuk menampilkan detail buku
 class DetailsViewModel(
     private val bukukuRepository: BukuKuRepository
 ): ViewModel() {
     private val _uiStateDetail = MutableStateFlow<DetailsUiState>(DetailsUiState.Loading)
-    val uiStateDetail = _uiStateDetail.asStateFlow()
+    val uiStateDetail = _uiStateDetail.asStateFlow() 
 
     fun getBook(id: String) {
         viewModelScope.launch {
@@ -36,9 +37,8 @@ class DetailsViewModel(
         }
     }
 
-    /**
-     * Factory for BookshelfViewModel] that takes BukuKuRepository] as a dependency
-     */
+    // Factory digunakan untuk menginisialisasi viewmodel dengan dependednsi BukuKuRepository
+    Factory ini diinisialisasi dengan konteks aplikasi untuk mendapatkan instance BukuKuRepository
     companion object {
         val Factory: ViewModelProvider.Factory = viewModelFactory {
             initializer {
