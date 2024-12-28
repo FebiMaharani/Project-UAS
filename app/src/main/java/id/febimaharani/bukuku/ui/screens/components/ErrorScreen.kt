@@ -18,6 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import id.febimaharani.bukuku.R
 import id.febimaharani.bukuku.ui.theme.BukuKuTheme
 
+// composable menampilkan layar eror jika gagal terkoneksi.
 @Composable
 fun ErrorScreen(
     retryAction: () -> Unit,
